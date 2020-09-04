@@ -12,7 +12,12 @@ GET /_cluster/health
 
 ## Cat indices
 ```
-GET /_cat/indices
+GET /_cat/indices?v
+```
+
+## Cat shards
+```
+GET /_cat/shards?v
 ```
 
 ## Create index
