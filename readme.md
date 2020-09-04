@@ -87,6 +87,27 @@ PUT /qualitia
   }
 }
 
+PUT /throwaway/_doc/1
+{
+  "id": 21,
+  "name": "Yatin"
+}
+
+PUT /throwaway/_doc/2
+{
+  "id": "22",
+  "name": "Pankaj"
+}
+
+GET /throwaway/_mapping
+
+GET /throwaway/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
 - analyser
 - coerce
 - copy_to
